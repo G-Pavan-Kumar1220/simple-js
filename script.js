@@ -15,8 +15,10 @@ box2.addEventListener("dblclick",myFunction6);
 box3.addEventListener("dblclick",myFunction7);
 box4.addEventListener("dblclick",myFunction8);
 btn.addEventListener("click",()=>{
-    titl.innerHTML=input2.value;
-    input2.value=" ";
+    if(input2.value!=""){
+        titl.innerHTML=input2.value;
+        input2.value="";
+    }
 })
 function myFunction1(){
     box1.style.backgroundColor="red";
